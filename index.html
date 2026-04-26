@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Sociotechnical Alignment Literature and Framework">
+  <meta name="keywords" content="Sociotechnical Alignment Literature and Framework">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sociotechnical Alignment Literature and Framework</title>
+
+  <link rel="stylesheet" href="./style/css/bulma.min.css">
+  <link rel="stylesheet" href="./style/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./style/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./style/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./style/css/index.css">
+  <link rel="icon" href="./style/images/favicon.svg">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./style/js/fontawesome.all.min.js"></script>
+  <script src="./style/js/bulma-carousel.min.js"></script>
+  <script src="./style/js/bulma-slider.min.js"></script>
+  <script src="./style/js/index.js"></script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3MQP7QC"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Structuring the Fragmented Space of Sociotechnical Alignment: A Systematic Review and Framework</h1>
+
+           <div class="column has-text-centered">
+             <div class="publication-links">
+               <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+             <span class="link-block">
+                <a href="https://github.com/sociotechnicalalignment/survey-code"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <div class="img-container"> 
+          <img id="framework_fig" src="./figs/static/framework.png" alt="Overview of the framework">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            As AI systems become embedded in social contexts, they must meet not only functional goals, such as producing 
+            accurate recommendations or predictions, but also <i>normative expectations</i> about how they should <i>"behave"</i> 
+            in society, for example by being fair, accountable, and respectful in their interactions. This broader challenge of 
+            specifying, modeling, and evaluating socially desirable AI behavior across social contexts is referred to as <i>sociotechnical alignment</i>.
+          </p>
+          <p>
+            We propose a conceptual framework that distinguishes four interrelated dimensions of sociotechnical alignment: 
+            the <strong>normative concept</strong> invoked, the <strong>alignment domain</strong> in which it is operationalized, 
+            the <strong>alignment methodology</strong> used to model and evaluate it, and the <strong>theoretical framework</strong> 
+            used to justify these choices across domains and populations.
+          </p>
+          <p>
+            We provide an overview of NLP literature on sociotechnical alignment, its normative objectives, domains, methodologies, and theoretical grounds. 
+            We find that the field suffers from terminological imprecision, and conceptual and theoretical gaps.
+            We discuss the implications of this fragmentation for research and practice, and offer recommendations for connecting social-scientific frameworks to alignment design choices and enabling more conceptually precise approaches to sociotechnical alignment.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+
+      <div class="column is-full">
+        <h2 class="title is-3">Literature over the years</h2>
+        <div class="content has-text-justified">
+          <p>
+            The number of publications on alignment has increased over the years, reflecting growing interest in this area.
+            The majority of papers focus on the technical aspects of alignment, while a smaller portion addresses sociotechnical alignment, 
+            though the number of sociotechnical contributions are steadily increasing. 
+        </div>
+
+      <div class="fig-container">
+        <iframe
+          id="interactive_fig"
+          src="./figs/interactive/sociotech_fig.html"
+          title="Sociotechnical Alignment: Manual domain labels vs. topical clusters">
+        </iframe>
+      </div>
+
+        <div class="content has-text-justified">
+          <p>
+            Manually assigned domain labels show that a large portion of papers on sociotechnical alignment leave the domain underspecified, 
+            while the rest of the papers are distributed across a range of domains, with the most common being "Safety", "Culture", "Demographic factors", and "Personalization".
+          </p>
+          <p>
+            Automatically identified topical clusters show that papers on sociotechnical alignment can be grouped into clusters that reflect different ways of framing the problem of sociotechnical alignment, 
+            such as "Alignment as preference aggregation and optimization", "Alignment as safety constraints", "Alignment as bias assessment", and "Alignment as value and moral compatibility".
+          </p>
+        </div>
+
+      <div class="fig-container">
+        <iframe
+          id="interactive_fig"
+          src="./figs/interactive/cluster_comparison_fig.html"
+          title="Technical vs Sociotechnical">
+        </iframe>
+      </div>
+        <div class="content has-text-justified">
+          <p>
+            Most manually assigned domain labels and automatically identified topical clusters largely overlap, but there are some discrepancies.
+            This is partly due to terminological imprecision in paper abstracts, which makes it difficult to assign precise domain labels, and also due to different emphases in framing the problem of sociotechnical alignment, which may not be fully captured by domain labels.
+          </p>
+        </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+
+      <div class="column is-full">
+        <h2 class="title is-3">Domains of focus over the years</h2>
+
+      <div class="fig-container">
+        <iframe
+          id="interactive_fig"
+          src="./figs/interactive/manual_domains.html"
+          title="Manual Domains">
+        </iframe>
+      </div>
+
+      <div class="fig-container">
+        <iframe
+          id="interactive_fig"
+          src="./figs/interactive/automatic_clusters.html"
+          title="Automatic Clusters">
+        </iframe>
+      </div>
+</section>
+
+
+</body>
+</html>
