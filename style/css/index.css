@@ -197,7 +197,7 @@ body {
 /* New */
 
 .fig-container {
-  width: min(96vw, 1500px);
+  width: min(20vw, 1500px);
   margin: 2rem auto;
   display: flex;
   justify-content: center;  /* horizontal center */
@@ -217,16 +217,16 @@ body {
 
 /* Optional: second figure can be shorter */
 #interactive_fig {
-  aspect-ratio: 13 / 8;
-  min-height: 300px;
+  min-height: 3%;
+  aspect-ratio: 12 / 10;
   max-height: 70vh;
-  min-width: 300px;
-  max-width: 90vh;
+  min-width: 100vh;
+  max-width: 110vh;
 }
 
 #framework_fig {
   min-height: 3%;
   max-height: 25vh;
-  min-width: 50px;
+  min-width: 20px;
   max-width: 90vh;
 }
