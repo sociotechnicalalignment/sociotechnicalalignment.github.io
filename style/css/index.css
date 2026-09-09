@@ -443,7 +443,7 @@ h1, h2, h3 {
 .frame__iframe {
   display: block;
   width: 100%;
-  height: clamp(560px, 78vh, 860px);
+  height: 520px;
   border: 0;
 }
 
@@ -554,7 +554,7 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 
   .figure-card__head { flex-wrap: wrap; }
   .figure-card__title { flex-basis: 100%; order: 3; }
-  .frame__iframe { height: 760px; }
+  .frame__iframe { height: 640px; }
 }
 
 /* ---------- hero authors ---------- */
