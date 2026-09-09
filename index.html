@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="A four-dimensional framework for specifying sociotechnical alignment, grounded in social-scientific accounts of sociobehavioral desirability, and a systematic review of 281 ACL Anthology papers (2022-2025).">
+  <meta name="keywords" content="sociotechnical alignment, AI alignment, NLP, literature review, specification framework">
+  <meta name="theme-color" content="#17233f">
+  <title>Structuring the Space of Sociotechnical Alignment</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Structuring the Space of Sociotechnical Alignment">
+  <meta property="og:description" content="A specification framework for sociotechnical alignment and a systematic review of 281 ACL Anthology papers, with interactive maps of the literature.">
+  <meta property="og:url" content="https://sociotechnicalalignment.github.io/">
+  <meta property="og:image" content="https://sociotechnicalalignment.github.io/figs/static/framework.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="./style/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="./style/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./style/css/index.css?v=6">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3MQP7QC"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="topbar" id="top">
+  <div class="topbar__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__text">Sociotechnical Alignment</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="site-nav">
+      <a href="#overview">Overview</a>
+      <a href="#framework">Framework</a>
+      <a href="#corpus">Corpus</a>
+      <a href="#maps">Maps</a>
+      <a href="#findings">Findings</a>
+      <a href="#recommendations">Recommendations</a>
+      <a href="#citation">Cite</a>
+      <a class="nav__cta" href="https://arxiv.org/abs/2607.01250" target="_blank" rel="noopener">
+        <i class="fas fa-file-pdf" aria-hidden="true"></i> Paper
+      </a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+  <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <p class="eyebrow eyebrow--light">arXiv preprint &middot; June 2026</p>
+    <h1 class="hero__title">Structuring the Space of <em>Sociotechnical Alignment</em></h1>
+    <p class="hero__subtitle">A Specification Framework and Survey of the Field</p>
+    <p class="hero__authors">
+      <span>Esra Dönmez</span>
+      <span class="hero__dot" aria-hidden="true">&middot;</span>
+      <span>Agnieszka Falenska</span>
+    </p>
+    <p class="hero__affil">
+      Institute for Natural Language Processing &amp; Interchange Forum for Reflecting on Intelligent Systems,
+      University of Stuttgart
+    </p>
+    <p class="hero__lede">
+      Sociotechnical alignment concerns the social desirability of AI behavior and is therefore inherently normative.
+      We introduce a four-dimensional framework for specifying it, ground its normative dimension in social-scientific
+      theory, and use it to review sociotechnical alignment research in the ACL Anthology.
+    </p>
+    <div class="hero__actions">
+      <a class="btn btn--ghost" href="#maps">
+        Explore the interactive maps <i class="fas fa-arrow-down" aria-hidden="true"></i>
+      </a>
+    </div>
+    <dl class="stats">
+      <div class="stat"><dt>281</dt><dd>papers reviewed</dd></div>
+      <div class="stat"><dt>37,260</dt><dd>abstracts screened, 2022&ndash;2025</dd></div>
+    </dl>
+  </div>
+</section>
+
+<main>
+
+<section class="section" id="overview">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">01 &middot; Overview</p>
+      <h2>The specification gap</h2>
+    </div>
+    <div class="prose reveal">
+      <p>
+        As AI systems become embedded in social contexts, they must satisfy not only functional goals but also
+        normative expectations about how they should behave, such as being fair and respectful. We refer to the
+        challenge of specifying, modeling, and evaluating such socially desirable behavior as
+        <strong>sociotechnical alignment</strong>.
+      </p>
+      <p>
+        While NLP research has made substantial progress on the technical mechanisms of alignment, it often leaves
+        underspecified what "social desirability" entails. Work targets heterogeneous objectives, invokes different
+        normative concepts such as values, preferences, or stakeholder requirements, and often leaves unclear whose
+        judgments matter and why. We argue that this reflects a fundamental gap in the literature: the absence of a
+        systematic framework for specifying how socially desirable AI behavior is <em>defined</em>, <em>justified</em>,
+        and <em>evaluated</em>.
+      </p>
+    </div>
+
+    <div class="contribs reveal">
+      <article class="contrib">
+        <span class="contrib__num">I</span>
+        <h3>A specification framework</h3>
+        <p>Four dimensions for specifying sociotechnical alignment: alignment target, normative concept, alignment methodology, and theoretical framework.</p>
+      </article>
+      <article class="contrib">
+        <span class="contrib__num">II</span>
+        <h3>Social-scientific grounding</h3>
+        <p>We connect alignment research to theories of sociobehavioral desirability by distinguishing values, moral judgments, and socially enforced norms, which carry importantly different theoretical commitments.</p>
+      </article>
+      <article class="contrib">
+        <span class="contrib__num">III</span>
+        <h3>A review of 281 ACL papers</h3>
+        <p>Applying the framework shows that normative concepts, target populations, and theoretical justifications are often underspecified or conflated, and yields recommendations for making normative assumptions explicit.</p>
+      </article>
+    </div>
+
+    <p class="pullquote reveal">
+      Together, these contributions clarify <em>what is being aligned, for whom, by which methods, and on what normative grounds</em>.
+    </p>
+  </div>
+</section>
+
+<section class="section section--tint" id="framework">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">02 &middot; The framework</p>
+      <h2>Four dimensions for specifying sociotechnical alignment</h2>
+      <p class="section__sub">
+        Neither technical objectives nor normative constructs uniquely determine one another. Failing to distinguish
+        these dimensions can turn substantive normative choices into seemingly neutral modeling decisions.
+      </p>
+    </div>
+
+    <div class="dimensions reveal">
+      <article class="dim dim--theory">
+        <div class="dim__icon"><i class="fas fa-book-open" aria-hidden="true"></i></div>
+        <div class="dim__body">
+          <h3>Theoretical framework</h3>
+          <p class="dim__q">Why appropriate?</p>
+          <p>A principled basis for interpreting and justifying the chosen targets, concepts, and methods across populations and contexts.</p>
+        </div>
+        <span class="dim__arrow" aria-hidden="true"><i class="fas fa-arrow-down"></i></span>
+      </article>
+      <article class="dim">
+        <div class="dim__icon"><i class="fas fa-bullseye" aria-hidden="true"></i></div>
+        <h3>Alignment target</h3>
+        <p class="dim__q">What is aligned?</p>
+        <p>The desired system behavior.</p>
+        <p class="dim__eg">e.g. safety, fairness</p>
+      </article>
+      <article class="dim">
+        <div class="dim__icon"><i class="fas fa-balance-scale" aria-hidden="true"></i></div>
+        <h3>Normative concept</h3>
+        <p class="dim__q">Aligned to what?</p>
+        <p>The kind of social criterion invoked to motivate that behavior, such as values, moral judgments, or social norms.</p>
+        <p class="dim__eg">e.g. human values, preferences</p>
+      </article>
+      <article class="dim">
+        <div class="dim__icon"><i class="fas fa-drafting-compass" aria-hidden="true"></i></div>
+        <h3>Alignment methodology</h3>
+        <p class="dim__q">Aligned how?</p>
+        <p>How these objectives are elicited, operationalized, modeled, and evaluated.</p>
+        <p class="dim__eg">e.g. preference optimization</p>
+      </article>
+    </div>
+
+    <div class="prose reveal">
+      <p>
+        The framework serves both an analytical and a constructive role. Analytically, it provides a shared structure
+        for comparing heterogeneous strands of alignment research that currently use overlapping terminology for
+        different problems. Constructively, it functions as a specification template for future work, requiring
+        researchers to make explicit <em>what behavior is being aligned, to what normative basis, for whom, through
+        which methods, and under which theoretical assumptions</em>.
+      </p>
+    </div>
+
+    <div class="subhead reveal">
+      <h3>Three normative concepts of sociobehavioral desirability</h3>
+      <p>
+        The social sciences have long theorized what counts as desirable, appropriate, and morally acceptable behavior.
+        Each concept implies a different account of what an AI system is being aligned <em>to</em>.
+      </p>
+    </div>
+    <div class="concepts reveal">
+      <article class="concept">
+        <h4>Values</h4>
+        <p class="concept__q">What people prioritize</p>
+        <p>Broad, transsituational priorities.</p>
+        <p class="concept__ref">Schwartz's Theory of Basic Human Values</p>
+      </article>
+      <article class="concept">
+        <h4>Social norms</h4>
+        <p class="concept__q">What is expected in a given context</p>
+        <p>Context-specific expectations about appropriate conduct.</p>
+        <p class="concept__ref">Durkheim, Goffman, Bicchieri's theory of social norms</p>
+      </article>
+      <article class="concept">
+        <h4>Moral judgments</h4>
+        <p class="concept__q">What is judged right or wrong</p>
+        <p>Evaluations of behavior in terms of right and wrong.</p>
+        <p class="concept__ref">Haidt, Moral Foundations Theory</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="corpus">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">03 &middot; The corpus</p>
+      <h2>From 37,260 abstracts to 281 sociotechnical alignment papers</h2>
+      <p class="section__sub">
+        Keyword and topic-based filtering followed by manual screening of ACL Anthology papers published between
+        2022 and 2025.
+      </p>
+    </div>
+
+    <ol class="pipeline reveal">
+      <li class="step">
+        <span class="step__count">37,260</span>
+        <span class="step__title">ACL Anthology</span>
+        <span class="step__desc">English abstracts, 2022&ndash;2025</span>
+      </li>
+      <li class="step">
+        <span class="step__count">1,089</span>
+        <span class="step__title">Keyword filtering</span>
+        <span class="step__desc">At least two alignment or normativity matches</span>
+      </li>
+      <li class="step">
+        <span class="step__count">790</span>
+        <span class="step__title">Topic filtering</span>
+        <span class="step__desc">20 abstract clusters; false positives removed</span>
+      </li>
+      <li class="step">
+        <span class="step__count">497</span>
+        <span class="step__title">Manual screening</span>
+        <span class="step__desc">Three annotators read titles and abstracts</span>
+      </li>
+      <li class="step step--final">
+        <span class="step__count">281</span>
+        <span class="step__title">Final corpus</span>
+        <span class="step__desc">Sociotechnical papers, text modality</span>
+      </li>
+    </ol>
+
+    <div class="subhead reveal">
+      <h3>How the corpus was analyzed</h3>
+    </div>
+    <ul class="analysis reveal">
+      <li><i class="fas fa-tags" aria-hidden="true"></i><span><strong>Manual target annotation</strong> assigning alignment target labels to every paper</span></li>
+      <li><i class="fas fa-project-diagram" aria-hidden="true"></i><span><strong>Topic modeling</strong> clustering abstracts into alignment framings</span></li>
+      <li><i class="fas fa-exchange-alt" aria-hidden="true"></i><span><strong>Target&ndash;topic comparison</strong> analyzing overlaps, ambiguity, and underspecification</span></li>
+      <li><i class="fas fa-book-reader" aria-hidden="true"></i><span><strong>Targeted qualitative reading</strong> of value, moral, and cultural papers plus representative cases</span></li>
+      <li><i class="fas fa-th-large" aria-hidden="true"></i><span><strong>Four-dimensional coding</strong> of the alignment dimensions, leading to recommendations</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="maps">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">04 &middot; Maps of the literature</p>
+      <h2>Technical and sociotechnical alignment in the ACL Anthology</h2>
+    </div>
+    <div class="prose reveal">
+      <p>
+        The number of publications on alignment has increased over the years, reflecting growing interest in this area.
+        The majority of the papers focus on the technical aspects of alignment, while a smaller portion addresses
+        sociotechnical alignment, though the number of sociotechnical contributions is steadily increasing.
+      </p>
+    </div>
+
+    <div class="figure-card reveal">
+      <div class="figure-card__head">
+        <span class="figure-card__num">Fig. 1</span>
+        <h3 class="figure-card__title">Technical vs. sociotechnical alignment papers</h3>
+        <a class="figure-card__open" href="./figs/interactive/sociotech_fig.html" target="_blank" rel="noopener">
+          Open full size <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+        </a>
+        <button class="figure-card__fs" type="button" title="View fullscreen" aria-label="View fullscreen">
+          <i class="fas fa-expand" aria-hidden="true"></i>
+        </button>
+      </div>
+      <ul class="figure-card__hints">
+        <li><i class="fas fa-sliders-h" aria-hidden="true"></i> Slide through publication years</li>
+        <li><i class="fas fa-mouse-pointer" aria-hidden="true"></i> Click a point to open the paper</li>
+        <li><i class="fas fa-list" aria-hidden="true"></i> Click legend entries to show or hide a group</li>
+      </ul>
+      <div class="frame is-loading">
+        <iframe class="frame__iframe" src="./figs/interactive/sociotech_fig.html" loading="lazy"
+                title="Technical vs. sociotechnical alignment papers over the years"></iframe>
+        <button class="frame__overlay" type="button">
+          <span><i class="fas fa-hand-pointer" aria-hidden="true"></i> Click to interact &middot; drag to pan, scroll to zoom</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="prose reveal">
+      <p>
+        Manually assigned target labels show that a large portion of papers on sociotechnical alignment leave the
+        target underspecified, while the rest of the papers are distributed across a range of targets, with the most
+        common being "safety", "culture", "demographic factors", and "personalization".
+      </p>
+      <p>
+        Automatically identified topical clusters show that papers on sociotechnical alignment can be grouped into
+        clusters that reflect different ways of framing the problem of sociotechnical alignment, such as "alignment as
+        preference aggregation and optimization", "alignment as safety constraints", "alignment as bias assessment", and
+        "alignment as value and moral compatibility".
+      </p>
+    </div>
+
+    <div class="figure-card reveal">
+      <div class="figure-card__head">
+        <span class="figure-card__num">Fig. 2</span>
+        <h3 class="figure-card__title">Manual target labels vs. topical clusters</h3>
+        <a class="figure-card__open" href="./figs/interactive/cluster_comparison_fig.html" target="_blank" rel="noopener">
+          Open full size <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+        </a>
+        <button class="figure-card__fs" type="button" title="View fullscreen" aria-label="View fullscreen">
+          <i class="fas fa-expand" aria-hidden="true"></i>
+        </button>
+      </div>
+      <ul class="figure-card__hints">
+        <li><i class="fas fa-sliders-h" aria-hidden="true"></i> Use the slider to switch between manual labels and automatic clusters</li>
+        <li><i class="fas fa-mouse-pointer" aria-hidden="true"></i> Click a point to open the paper</li>
+        <li><i class="fas fa-list" aria-hidden="true"></i> Click legend entries to show or hide a group</li>
+      </ul>
+      <div class="frame is-loading">
+        <iframe class="frame__iframe" src="./figs/interactive/cluster_comparison_fig.html" loading="lazy"
+                title="Manual target labels compared with automatically identified topical clusters"></iframe>
+        <button class="frame__overlay" type="button">
+          <span><i class="fas fa-hand-pointer" aria-hidden="true"></i> Click to interact &middot; drag to pan, scroll to zoom</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="prose reveal">
+      <p>
+        Most manually assigned target labels and automatically identified topical clusters largely overlap, but there
+        are some discrepancies. This is partly due to terminological imprecision in paper abstracts, which makes it
+        difficult to assign precise target labels, and also due to different emphases in framing the problem of
+        sociotechnical alignment, which may not be fully captured by target labels.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="targets">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">05 &middot; Alignment targets over the years</p>
+      <h2>Which alignment targets the field has concentrated on</h2>
+      <p class="section__sub">
+        The field concentrates around a small set of recurring framings: preference aggregation and optimization,
+        bias and fairness, safety constraints, personalization, multilingual transfer, epistemic reliability, and value,
+        moral, and cultural compatibility. The maps show the corpus through two lenses: target labels assigned by hand,
+        and topic clusters derived from the abstracts.
+      </p>
+    </div>
+
+    <div class="figure-card reveal">
+      <div class="figure-card__head">
+        <span class="figure-card__num">Fig. 3</span>
+        <h3 class="figure-card__title">Manually assigned alignment targets</h3>
+        <a class="figure-card__open" href="./figs/interactive/manual_targets.html" target="_blank" rel="noopener">
+          Open full size <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+        </a>
+        <button class="figure-card__fs" type="button" title="View fullscreen" aria-label="View fullscreen">
+          <i class="fas fa-expand" aria-hidden="true"></i>
+        </button>
+      </div>
+      <ul class="figure-card__hints">
+        <li><i class="fas fa-sliders-h" aria-hidden="true"></i> Slide through publication years</li>
+        <li><i class="fas fa-mouse-pointer" aria-hidden="true"></i> Click a point to open the paper</li>
+        <li><i class="fas fa-list" aria-hidden="true"></i> Double-click a legend entry to isolate it</li>
+      </ul>
+      <div class="frame is-loading">
+        <iframe class="frame__iframe" src="./figs/interactive/manual_targets.html" loading="lazy"
+                title="Manually assigned alignment targets over the years"></iframe>
+        <button class="frame__overlay" type="button">
+          <span><i class="fas fa-hand-pointer" aria-hidden="true"></i> Click to interact &middot; drag to pan, scroll to zoom</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="figure-card reveal">
+      <div class="figure-card__head">
+        <span class="figure-card__num">Fig. 4</span>
+        <h3 class="figure-card__title">Automatically identified topical clusters</h3>
+        <a class="figure-card__open" href="./figs/interactive/automatic_clusters.html" target="_blank" rel="noopener">
+          Open full size <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+        </a>
+        <button class="figure-card__fs" type="button" title="View fullscreen" aria-label="View fullscreen">
+          <i class="fas fa-expand" aria-hidden="true"></i>
+        </button>
+      </div>
+      <ul class="figure-card__hints">
+        <li><i class="fas fa-sliders-h" aria-hidden="true"></i> Slide through publication years</li>
+        <li><i class="fas fa-mouse-pointer" aria-hidden="true"></i> Click a point to open the paper</li>
+        <li><i class="fas fa-list" aria-hidden="true"></i> Double-click a legend entry to isolate it</li>
+      </ul>
+      <div class="frame is-loading">
+        <iframe class="frame__iframe" src="./figs/interactive/automatic_clusters.html" loading="lazy"
+                title="Automatically identified topical clusters over the years"></iframe>
+        <button class="frame__overlay" type="button">
+          <span><i class="fas fa-hand-pointer" aria-hidden="true"></i> Click to interact &middot; drag to pan, scroll to zoom</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="findings">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">06 &middot; Findings</p>
+      <h2>What the review shows</h2>
+      <p class="section__sub">
+        The analysis surfaces four main findings about how sociotechnical alignment is specified in current ACL research.
+      </p>
+    </div>
+    <div class="findings reveal">
+      <article class="finding">
+        <span class="finding__num">1</span>
+        <h3>Alignment targets are often left underspecified</h3>
+        <p>A large portion of papers do not make explicit which system behavior they are aligning.</p>
+      </article>
+      <article class="finding">
+        <span class="finding__num">2</span>
+        <h3>Research attention is unevenly distributed</h3>
+        <p>Work concentrates on technical aspects and safety constraints, with less on bias, fairness, and personalization, and comparatively little on population-level value and moral compatibility.</p>
+      </article>
+      <article class="finding">
+        <span class="finding__num">3</span>
+        <h3>Values and morals are treated as optimization targets</h3>
+        <p>They are frequently handled as measurable targets rather than as normative concepts that require justification.</p>
+      </article>
+      <article class="finding">
+        <span class="finding__num">4</span>
+        <h3>Core terminology is used inconsistently</h3>
+        <p>Normative concepts are conflated with alignment targets, target populations are underdefined, and design choices are rarely theoretically justified.</p>
+      </article>
+    </div>
+    <p class="pullquote reveal">
+      These patterns point to a broader gap between the technical operationalization of alignment and the normative
+      questions that sociotechnical alignment ostensibly seeks to address.
+    </p>
+  </div>
+</section>
+
+<section class="section section--tint" id="recommendations">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">07 &middot; Recommendations</p>
+      <h2>A structured path from target to theory</h2>
+      <p class="section__sub">
+        The identified gaps translate into practical recommendations organized along the four dimensions of the framework.
+      </p>
+    </div>
+    <div class="recs reveal">
+      <article class="rec">
+        <div class="rec__icon"><i class="fas fa-bullseye" aria-hidden="true"></i></div>
+        <h3>Alignment target</h3>
+        <p>Clearly specify the desired system behavior, and distinguish behavioral targets such as safety, fairness, or personalization from the normative concepts used to justify them.</p>
+      </article>
+      <article class="rec">
+        <div class="rec__icon"><i class="fas fa-balance-scale" aria-hidden="true"></i></div>
+        <h3>Normative concept</h3>
+        <p>Define values, morals, norms, and preferences explicitly rather than treating them as interchangeable, with particular attention to whose judgments are represented and at what level of analysis.</p>
+      </article>
+      <article class="rec">
+        <div class="rec__icon"><i class="fas fa-drafting-compass" aria-hidden="true"></i></div>
+        <h3>Alignment methodology</h3>
+        <p>Carry these specifications consistently through data collection, modeling, and evaluation, including explicit treatment of population scope, disagreement, and the limits of generalization.</p>
+      </article>
+      <article class="rec">
+        <div class="rec__icon"><i class="fas fa-book-open" aria-hidden="true"></i></div>
+        <h3>Theoretical framework</h3>
+        <p>Ground normative and methodological choices in relevant social-scientific theory rather than leaving them implicit. The paper provides an illustrative mapping from common settings, such as personalization, moralized topics, and cross-cultural deployment, to theoretical frameworks that can inform alignment decisions.</p>
+      </article>
+    </div>
+
+    <div class="subhead reveal">
+      <h3>Open problems</h3>
+      <p>Specification alone does not resolve every question. The findings point to several directions for future work.</p>
+    </div>
+    <ol class="open reveal">
+      <li>Move beyond underspecified notions of alignment by making explicit the target, normative concept, relevant population, and intended scope of generalization.</li>
+      <li>Build stronger connections between CL/NLP and the social sciences to ground constructs such as values, norms, morality, and culture in theories that clarify what is being measured and why.</li>
+      <li>Develop alignment methods that account for disagreement, heterogeneity, and context rather than collapsing diverse judgments into a single target.</li>
+      <li>Conduct broader empirical work across languages, communities, disciplines, and deployment settings to test how alignment assumptions travel across contexts.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="citation">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">08 &middot; Citation</p>
+      <h2>Cite this work</h2>
+    </div>
+    <div class="cite reveal">
+      <div class="cite__head">
+        <span class="cite__label">BibTeX</span>
+        <button class="cite__copy" type="button" data-copy-target="bibtex">
+          <i class="fas fa-copy" aria-hidden="true"></i> <span>Copy</span>
+        </button>
+      </div>
+<pre id="bibtex"><code>@misc{donmez2026structuring,
+  title         = {Structuring the Space of Sociotechnical Alignment},
+  author        = {D{\"o}nmez, Esra and Falenska, Agnieszka},
+  year          = {2026},
+  eprint        = {2607.01250},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CY},
+  url           = {https://arxiv.org/abs/2607.01250}
+}</code></pre>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div>
+      <p class="footer__title">Structuring the Space of Sociotechnical Alignment</p>
+      <p class="footer__sub">Esra Dönmez and Agnieszka Falenska &middot; Institute for Natural Language Processing and Interchange Forum for Reflecting on Intelligent Systems, University of Stuttgart</p>
+    </div>
+    <div class="footer__links">
+      <a href="https://arxiv.org/abs/2607.01250" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a>
+      <a href="https://github.com/sociotechnicalalignment/survey-code" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+      <a href="#top"><i class="fas fa-arrow-up" aria-hidden="true"></i> Back to top</a>
+    </div>
+  </div>
+</footer>
+
+<script defer src="./style/js/fontawesome.all.min.js"></script>
+<script src="./style/js/index.js?v=3"></script>
+</body>
+</html>

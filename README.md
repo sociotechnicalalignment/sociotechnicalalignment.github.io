@@ -1,1 +1,1 @@
-# sociotechnical-alignment.github.io
+# sociotechnicalalignment.github.io
